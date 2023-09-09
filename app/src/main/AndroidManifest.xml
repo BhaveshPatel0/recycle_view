@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecycleView"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.MessageAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TableAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ColorTextAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FactorialNumberAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PalindromeCheckAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PalindromeAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BoxRecyclerAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BoxAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SqureCubeAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NumberSqureCubeAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FruitsDetailAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FruitsAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeamPlayerDetailAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContactInfoAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContectAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.IndiaTeamAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReversedEkdaAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RcvNameAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NameAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RcvSqureAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SqureAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EkdaAct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Ekda2Act"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
