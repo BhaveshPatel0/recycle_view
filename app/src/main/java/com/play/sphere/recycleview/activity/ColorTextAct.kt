@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.play.sphere.recycleview.R
+import com.play.sphere.recycleview.adapter.AdapterColorBox
 
 class ColorTextAct : AppCompatActivity() {
     private lateinit var rcvColorText: RecyclerView

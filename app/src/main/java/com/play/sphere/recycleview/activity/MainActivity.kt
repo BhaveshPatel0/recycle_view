@@ -5,9 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.play.sphere.recycleview.R
+import com.play.sphere.recycleview.arrays.PracticeAct
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var btnColor:Button
+    private lateinit var btnClickCount:Button
+    private lateinit var btnSquareBox:Button
+    private lateinit var btnNikeBox:Button
+    private lateinit var btnSelectBox:Button
     private lateinit var btnEka:Button
+    private lateinit var btnImage:Button
     private lateinit var btnSqure:Button
     private lateinit var btnName:Button
     private lateinit var btnReversed:Button
@@ -21,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnColorText:Button
     private lateinit var btnTable:Button
     private lateinit var btnMessage:Button
+    private lateinit var btnPractice:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +39,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindView() {
+        btnColor =findViewById(R.id.btnColor)
+        btnClickCount =findViewById(R.id.btnClickCount)
+        btnNikeBox =findViewById(R.id.btnNikeBox)
+        btnSquareBox =findViewById(R.id.btnSquareBox)
+        btnSelectBox =findViewById(R.id.btnSelectBox)
         btnEka =findViewById(R.id.btnEka)
+        btnImage =findViewById(R.id.btnImage)
         btnSqure=findViewById(R.id.btnSqure)
         btnName=findViewById(R.id.btnName)
         btnReversed=findViewById(R.id.btnReversed)
@@ -45,12 +59,31 @@ class MainActivity : AppCompatActivity() {
         btnColorText=findViewById(R.id.btnColorText)
         btnTable=findViewById(R.id.btnTable)
         btnMessage=findViewById(R.id.btnMessage)
+        btnPractice=findViewById(R.id.btnPractice)
 
     }
 
     private fun bindClick() {
+        btnSelectBox.setOnClickListener {
+            startActivity(Intent(this,SelectNumberAct::class.java))
+        }
+        btnClickCount.setOnClickListener {
+            startActivity(Intent(this,ClickCountAct::class.java))
+        }
+        btnNikeBox.setOnClickListener {
+            startActivity(Intent(this,NikeBoxAct::class.java))
+        }
+        btnSquareBox.setOnClickListener {
+            startActivity(Intent(this,SquareBoxAct::class.java))
+        }
+        btnColor.setOnClickListener {
+            startActivity(Intent(this,ColorAct::class.java))
+        }
         btnEka.setOnClickListener {
             startActivity(Intent(this,EkdaAct::class.java))
+        }
+        btnImage.setOnClickListener {
+            startActivity(Intent(this,ImageAct::class.java))
         }
         btnSqure.setOnClickListener {
             startActivity(Intent(this,SqureAct::class.java))
@@ -89,7 +122,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,TableAct::class.java))
         }
         btnMessage.setOnClickListener {
-            startActivity(Intent(this,MessageAct::class.java))
+            startActivity(Intent(this,WhatsAppMainPageAct::class.java))
+        }
+        btnPractice.setOnClickListener {
+            startActivity(Intent(this,PracticeAct::class.java))
         }
     }
 }

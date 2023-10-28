@@ -17,12 +17,55 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/btnClickCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Click Count" />
+            <Button
+                android:id="@+id/btnNikeBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Nike Box" />
+            <Button
+                android:id="@+id/btnSquareBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Square Box" />
+            <Button
+                android:id="@+id/btnSelectBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Select Box" />
+            <Button
+                android:id="@+id/btnColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Color" />
+
+            <Button
                 android:id="@+id/btnEka"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
                 android:text="Ekda" />
+            <Button
+                android:id="@+id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Image" />
 
             <Button
                 android:id="@+id/btnSqure"
@@ -124,6 +167,13 @@
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
                 android:text="Message" />
+            <Button
+                android:id="@+id/btnPractice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:text="Practice" />
 
         </LinearLayout>
     </ScrollView>

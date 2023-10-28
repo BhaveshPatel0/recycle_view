@@ -13,4 +13,6 @@
     <color name="indigo">#4B0082</color>
     <color name="violet">#9400D3</color>
     <color name="whatsappbar">#008069</color>
+    <color name="whatsapp_font_color">#b2dfd8</color>
+    <color name="send_message">#e1ffc7</color>
 </resources>

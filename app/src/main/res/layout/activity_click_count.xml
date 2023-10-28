@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ClickCountAct"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtBoxNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BoxNumber"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_margin="@dimen/_20sdp"/>
+
+    <Button
+        android:id="@+id/btnBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCountClickBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
 }
 
 android {
@@ -27,12 +28,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
+
 }
 
 dependencies {
@@ -44,4 +46,16 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //Image Loading LIB
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    //Image Loading LIB
+
+    //Size LIB
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    //Size LIB
+
+    //youtube extractor video LIB
+    implementation ("com.github.HaarigerHarald:android-youtubeExtractor:2.1.0")
+    //youtube extractor video LIB
 }
